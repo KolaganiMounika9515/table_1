@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+</head>
+<body>
+    <h2>User Registration Form</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+        <!--Usernmae Field-->
+    <label for="username">Username *:</label>
+    <input type="text" id="username" placeholder="enter the username"><br><br>
+    <!--New Email Field-->
+    <label for="email_field">Email:</label>
+    <input id="email_field" name="email" placeholder="enter your email address" type="email"><br><br>
+    <!--Password Field-->
+    <label for="password">Password *:</label>
+    <input type="password" id="password" name="password" placeholder="enter the password" required title=" password must be atleast 6 characters"><br><br>
+    <!--Number Field-->
+    <label for="age">Age *:</label>
+    <input type="number" id="age" name="age" placeholder="enter the age" required title="please enter your age in years"
+    min="18"
+    max="35"><br><br>
+    <!--Date Field-->
+    <label for="date">DOB:</label>
+    <input type="date" id="date" name="date"><br><br>
+    <label for="date">Date And Time:</label>
+    <input type="datetime-local" id="date" name="date"><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Extra Details</legend>
+    <!--Time Field-->
+    <label for="time">Class Timings:</label>
+        <input type="time" id="time" name="time" required><br><br>
+        <!--url Field-->
+        <label for="wesite">Enter the website</label>
+        <input type="url" id="websie" name="website"><br><br>
+        <!--Color Field-->
+        <label>Color:</label>
+        <input type="color"><br><br>
+        <!--Checkbox Feild-->
+    <label>
+        <input type="checkbox" name="html" value="html" id="html">HTML
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="css" value="css" id="css">CSS
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="js" value="js" id="js">JavaScript
+    </label>
+    <br><br>
+    <!--Radiobutton Field-->
+    <label>
+        <input type="radio" name="gender" value="m">Male
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="gender" value="f">Female
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="gender" value="o">Others
+    </label>
+    <br><br>
+    <!--File-->
+    <label for="file"></label>
+    <input type="file" id="file" name="file" title="upload resume">
+    <br><br>
+    <!--Range-->
+    <label>Rate yourself in Html</label>
+    <input type="range">
+    <br><br>
+    <!--select drop_list-->
+    <label for="skill">Select your skills:</label>
+    <select id="skill" name="skills">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+    </select>
+    <br><br>
+    <label for="skill">Select your skills:</label>
+    <select id="skill" name="skills" multiple>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+    </select>
+    <br><br>
+    </fieldset>
+    <!--Text area-->
+    <label for="comment">Comments:</label>
+    <textarea id="comment" rows="10" cols="10" title="enter your comments"></textarea>
+    <br><br>
+    <button type="submit">Submit</button>
+    </form>
+</body>
+</html
